@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading Calculator</title>
+    <script>
+        // calculation for total marks
+function total () {
+    var sub1 = parseInt(document.getElementById("English").value)
+     var sub2 = parseInt(document.getElementById("Swahili").value)
+      var sub3 = parseInt(document.getElementById("Mathematics").value)
+       var sub4 = parseInt(document.getElementById("commerce").value)
+        var sub5 = parseInt(document.getElementById("ICT").value)
+         var sub6 = parseInt(document.getElementById("Physics").value)
+}
+ if(sub1>100 || sub2>100 || sub3>100 || sub4>100 || sub5>100 || sub6>100) {
+    alert("Please enter a number between 0 and 100")
+ }
+ else {
+    var total = sub1 + sub2 + sub3 + sub4 + sub5+ sub6;
+    document.getElementById("total").innerHTML = "Englishmarks" ;"+sub2" <br> Mathematicsmarks ;"+sub3" <br> commercemarks ;"+sub4" <br> ICTmarks ;"+sub5" <br> ICTmarks ;"=sub5" <br>
+    Physicsmarks ; "+"<br>_______________<br> Totalmarks+"Total"; 
+ }
+//  calculation for average performance
+ function Average() {
+    var sub1 = parseInt(document.getElementById("English").value)
+     var sub2 = parseInt(document.getElementById("Swahili").value)
+      var sub3 = parseInt(document.getElementById("Mathematics").value)
+       var sub4 = parseInt(document.getElementById("commerce").value)
+        var sub5 = parseInt(document.getElementById("ICT").value)
+         var sub6 = parseInt(document.getElementById("Physics").value)
+
+          if (sub1 > 100 || sub2 > 100 || sub3 > 100 || sub4 > 100 || sub5 > 100 || sub6 > 100) {
+         alert("Please enter a number between 0 and 100")
+ }
+ else{
+    var Total = sub1 + sub2 + sub3 + sub4 + sub5+ sub6;
+    var Average = Total/6
+    document.getElementById(Average).innerHTML="Your Average Marks Is ;Average"
+ }
+//  calculaation for the grade
+
+function grade() {
+    var sub1 = parseInt(document.getElementById("English").value)
+    var sub2 = parseInt(document.getElementById("Swahili").value)
+    var sub3 = parseInt(document.getElementById("Mathematics").value)
+    var sub4 = parseInt(document.getElementById("commerce").value)
+    var sub5 = parseInt(document.getElementById("ICT").value)
+    var sub6 = parseInt(document.getElementById("Physics").value)
+
+           if (sub1 > 100 || sub2 > 100 || sub3 > 100 || sub4 > 100 || sub5 > 100 || sub6 > 100) {
+        alert("Please enter a number between 0 and 100")
+    
+}
+// the grading criteria
+else{
+    var Total = sub1 + sub2 + sub3 + sub4 + sub5+ sub6;
+    var Average = Total/6
+
+    if (Average >= 80 && Average <= 100) {
+        document.getElementById(Grade).innerHTML="Your Grade Is A"
+    }
+ else if (Average >= 70 && Average <= 80) {
+        document.getElementById(Grade).innerHTML="Your Grade Is B"
+    }
+    else if (Average >= 60 && Average <= 70) {
+        document.getElementById(Grade).innerHTML="Your Grade Is C"
+    }
+    else if (Average >= 50 && Average <= 60) {
+        document.getElementById(Grade).innerHTML="Your Grade Is D"
+    }
+    else if (Average >= 40 && Average <= 50) {
+        document.getElementById(Grade).innerHTML="Your Grade Is E"
+    }
+    else if (Average < 40) {
+        document.getElementById(Grade).innerHTML="Your Grade Is F"
+    }
+    
+}
+
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    /*subject input/*   
+        <div id="main">
+<div id="head">
+    <h1>Student Grading Calculator</h1>
+</div>
+<label for="English">English</label> <input type="text" id="English"> <br>
+<label for="Swahili">Swahili</label> <input type="text" id="Swahili"> <br>
+<label for="Mathematics">Mathematics</label> <input type="text" id="Mathematics"> <br>
+<label for="commerce">Commerce</label> <input type="text" id="commerce"> <br>
+<label for="ICT">ICT</label> <input type="text" id="ICT"> <br>
+<label for="Physics">Physics</label> <input type="text" id="Physics"> <br>
+<br>
+
+<button class="btn1" onclick="Total()">Total</button>
+<button class="btn2" onclick="Average()">Average</button>
+<button class="btn3" onclick="Grade()">Grade</button>
+
+    </div>
+    <div id="Results">
+    
+        <div id="head1">
+            <h1>Total</h1>
+        </div>
+        <div id="Total"></div>
+    
+        <div id="head2">
+            <h1>Average</h1>
+        </div>
+        <div id="Average"></div>
+    
+        <div id="head3">
+            <h1>Grade</h1>
+        </div>
+        <div id="Grade"></div>
+    
+    </div>
+
+</body>
+  </html> 
