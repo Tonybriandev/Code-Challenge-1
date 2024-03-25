@@ -6,10 +6,14 @@ About
 The repository entails:
 >Student grading calculator
 >speed detector
->net salary calculator
+>Net salary calculator
 
 
 Author
 >Tony Brian
+
+
 Contacts
 Tonybrainmwenda@gmail.com
+
+
