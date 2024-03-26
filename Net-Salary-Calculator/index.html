@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../tony.css">
+    <title>Net Salary Calculator</title>
+</head>
+
+<body>
+    <!-- navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav_items">
+                <li class="nav_item"><a href="../index.html">Student Grade Generator</a></li>
+                <li class="nav_item"><a href="../Speed-Detector/index.html">Speed Detector</a></li>
+                <li class="nav_item"><a href="index.html">Net Salary Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- calculation -->
+        <section class="net_salary_calc">
+            <!-- Title  -->
+            <h1>Net Salary Calculator</h1>
+            <!--  inputs and output -->
+            <div class="container">
+                <div class="inputs">
+                    <!-- Salary input field -->
+                    <div class="salary">
+                        <h2>Basic Salary</h2>
+                        <input type="number" id="salary" value="0" placeholder="Basic Salary">
+                    </div>
+                    <!-- Benefits input field -->
+                    <div class="benefits">
+                        <h2>Benefits</h2>
+                        <input type="number" id="benefits" value="0" placeholder="Benefits">
+                    </div>
+                    <!--  calculation -->
+                    <button class="button">Calculator</button>
+
+                </div>
+                <!-- Output section -->
+                <div class="output">
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>

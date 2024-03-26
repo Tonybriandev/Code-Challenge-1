@@ -1,0 +1,42 @@
+/* center text */
+#speed_detector{
+    margin-top: 5rem;
+    text-align: center;
+}
+/*  header styles */
+.secondary_header{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: green;
+}
+/* Form container styling */
+.form_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  aquamarine;
+    padding: 3rem;
+    width: 20%;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem );
+    margin: auto;
+}
+ /* Tertiary header styling */
+.tertiary_header{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+ /* Output styling */
+.output{
+    width: 10%;
+    padding: 3rem;
+    margin-top: 1rem;
+    color: red;
+    margin: auto;
+    margin-top: 1rem;  
+    font-size: 1.5rem; 
+}
