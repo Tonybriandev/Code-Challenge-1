@@ -32,7 +32,7 @@ Write a program that takes as input the speed of a car e.g 80. If the speed is l
 For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
 PROGRAMMER
-Tony brian
+
 
 CONTACTS
 tonybrianmwenda@gmail.com
